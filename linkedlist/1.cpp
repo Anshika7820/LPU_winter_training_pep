@@ -151,6 +151,8 @@ void insertAtEnd(Node *&head, int val)
 //     delete nodeToDelete;
 // }
 
+//count how many nodes have even values---
+
 int countevendata(Node* head){
     Node* temp=head;
     int count=0;
@@ -161,6 +163,21 @@ int countevendata(Node* head){
         temp=temp->next;
     }
     return count;
+}
+
+//search the key in ll using recursion---
+
+bool searchkey(Node* head,int key){
+
+    if(head==NULL){
+        return false;
+    }
+    
+    if(head->data==key){
+        return true;
+    }
+    
+    return searchkey(head->next,key);
 }
 
 int main()
@@ -208,6 +225,8 @@ int main()
     // cout<<endl;
 
     // printLinkedList(head);
-    cout<<countevendata(head);
+    // cout<<countevendata(head);
+
+    cout<<searchkey(head,12);
     return 0;
 }
