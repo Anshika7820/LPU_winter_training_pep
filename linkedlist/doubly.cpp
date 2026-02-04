@@ -54,22 +54,21 @@ void insertAtPosition(Node* &head,int val,int n){
         head=node;
         return;
     }
-
+    
     Node* temp=head;
 
     for(int i=1;i<n-1 && temp!=NULL;i++){
         temp=temp->next;
     }
-
     if(temp==NULL){
         return ;
     }
-       
     node->next=temp->next;
     node->prev = temp;
     temp->next = node;
 
 }
+
 void printDoublyList(Node* head) {
     Node* temp = head;
     while (temp != NULL) {
@@ -90,6 +89,7 @@ int main() {
     printDoublyList(head);
 
     cout<<endl;
+
     insertAtPosition(head,9,3);
 
     printDoublyList(head);
