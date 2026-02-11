@@ -49,3 +49,6 @@ class Solution {
         }
     }
 };
+
+
+// using wothout reverse--
