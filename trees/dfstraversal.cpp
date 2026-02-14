@@ -12,11 +12,27 @@ class Node{
         right=NULL;
     } 
 
-    inordertraversal(Node* root){
+    void inordertraversal(Node* root){
         if(root==NULL) return;
         inordertraversal(root->left);
         cout<<root->data;
         inordertraversal(root->right);
+    }
+
+    void preordertraveral(Node* root){
+        if(root==NULL) return;
+
+        cout<<root->data;
+        inordertraversal(root->left);
+        inordertraversal(root->right);
+    }
+
+    void postorderTraversal(Node* root){
+        if(root==NULL) return;
+        
+        inordertraversal(root->left);
+        inordertraversal(root->right);
+        cout<<root->data;
     }
 };
 int main(){
