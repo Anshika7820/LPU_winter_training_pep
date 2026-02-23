@@ -9,8 +9,7 @@ class Solution {
             int end=min(i+k-1,n-1);
             while(start<end){
                 swap(arr[start++],arr[end--]);
-            }
-            
+            }  
         }
     }
     //O(n)

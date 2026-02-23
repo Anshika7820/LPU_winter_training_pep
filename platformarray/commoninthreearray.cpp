@@ -26,8 +26,7 @@ class Solution {
              j++;
          }else{
              k++;
-         }
-         
+         }      
      }
     return ans;
     }

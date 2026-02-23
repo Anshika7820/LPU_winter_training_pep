@@ -5,4 +5,5 @@
                             -> 2. Min Heap -> Every parent node is smaller than or equal to its children (the smallest element is always at top).
 
         ** important -> heap is not BST
+
 */

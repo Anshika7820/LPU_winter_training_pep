@@ -1,6 +1,5 @@
 #include <iostream>
 using namespace std;
-
 class Node
 {
 public:
@@ -39,13 +38,11 @@ void insertAtEnd(Node *&head, int val)
 // {
 
 //     Node *node = new Node(val);
-
 //     if (head == NULL)
 //     {
 //         head = node;
 //         return;
 //     }
-
 //     node->next = head;
 //     head = node;
 // }
@@ -114,11 +111,8 @@ void insertAtEnd(Node *&head, int val)
 
 // void printLinkedList(Node *head)
 // {
-
 //     Node *temp = head;
-
-//     while (temp != NULL)
-//     {
+//     while (temp != NULL){
 //         cout << temp->data << " ";
 //         temp = temp->next;
 //     }
