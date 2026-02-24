@@ -40,9 +40,7 @@ public:
                 
                 count2++;
             }
-
             head->next=reverseKGroup(curr,k);
-
             return prevNode;
         }
         return head;

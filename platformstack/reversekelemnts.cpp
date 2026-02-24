@@ -11,7 +11,7 @@ class Solution {
 
     queue<int> reverseFirstK(queue<int> q, int k) {
         int n = q.size();
-        if (k>n || k==0) return q;
+        if(k>n || k==0) return q;
         reverseK(q, k);
         for (int i = 0; i < n - k; i++) {
             q.push(q.front());

@@ -22,7 +22,7 @@ public:
         ListNode dummy(0); 
         ListNode* curr = &dummy;
 
-        while (l1!=NULL && l2!=NULL) {
+        while(l1!=NULL && l2!=NULL) {
             if (l1->val < l2->val) {
                 curr->next = l1;
                 l1 = l1->next;
